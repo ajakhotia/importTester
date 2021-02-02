@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(importTester VERSION 0.0.0.0)
+project(importTester VERSION 0.1.0.0)
 
 option(IMPORT_TESTER_FIND_ALL_KNOWN_PROJECTS "Ask importTest to find all packages it is aware of" OFF)
 
