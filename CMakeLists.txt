@@ -9,6 +9,7 @@ macro(setup_find PACKAGE_NAME)
     option(IMPORT_TESTER_FIND_${PACKAGE_NAME} "Ask import test to find ${PACKAGE_NAME} package" OFF)
 
     if(IMPORT_TESTER_FIND_${PACKAGE_NAME} OR IMPORT_TESTER_FIND_ALL_KNOWN_PROJECTS)
+        message(STATUS "Finding ${PACKAGE_NAME} package")
         find_package(${PACKAGE_NAME} REQUIRED)
     endif()
 
